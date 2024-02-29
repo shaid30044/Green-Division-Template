@@ -11,9 +11,10 @@ int main()
     {
         scanf("%d %d", &qt, &s);
 
-        diff = idx = 1000;
+        diff = 1000;
+        idx = 0;
 
-        for (int i = 0; i < qt; i++)
+        for (int i = 1; i <= qt; i++)
         {
             scanf("%d", &x);
 
@@ -23,7 +24,7 @@ int main()
                 idx = i;
             }
         }
-        printf("%d\n", idx + 1);
+        printf("%d\n", idx);
     }
 
     return 0;
